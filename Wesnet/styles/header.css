@@ -1,0 +1,24 @@
+header{
+    position: relative;
+    top:0;
+    left:0;
+    background-color: rgb(240, 238, 236);
+    height: 100px;
+    width:100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+header h1{
+    position:absolute;
+    left: 12px;
+    top:3px;
+    color:rgb(82, 82, 172);
+
+  }
+header .logo{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-radius:10px;
+}

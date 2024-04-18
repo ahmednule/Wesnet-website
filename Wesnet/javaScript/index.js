@@ -1,4 +1,4 @@
-var slideIndex = 0;
+/* var slideIndex = 0;
 
 function showSlides(){
     var slides = document.querySelectorAll('.slide-show-container image');
@@ -7,3 +7,4 @@ function showSlides(){
     slides[slideIndex].classList.add('acvtive');
     setTimeout(showSlides, 2000);
 }
+*/
