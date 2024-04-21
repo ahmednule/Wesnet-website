@@ -12,6 +12,9 @@ header .logo{
     font-weight: bold;
     position:absolute;
 }
+header .logo:hover{
+    color: rgb(60, 33, 216);
+}
 header .menu{
     float: right;
     margin-right: 20px;
