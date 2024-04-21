@@ -1,4 +1,5 @@
 header {
+    position:relative;
     background-color: aliceblue;
     height:100px;
     width:100%;
@@ -9,6 +10,7 @@ header .logo{
     line-height: 80px;
     padding:0 100px;
     font-weight: bold;
+    position:absolute;
 }
 header .menu{
     float: right;
@@ -25,8 +27,52 @@ header .menu li a{
     text-transform: uppercase;
     padding:7px 13px;
 }
-menu.active, a:hover {
+a.active, a:hover {
     background:#1B9bff;
     transition:.5s;
-    border-radius: 3px;
+    border-radius: 10px;
+}
+header .bar{
+    font-size:30px;
+    color:black;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:952px){
+    header.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    header .menu li a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    header .bar{
+        display: block;
+    }
+    .menu{
+        position:fixed;
+        width:100%;
+        height: 100svh;
+        background-color: #b2c1d1;
+        top:80px;
+        left:0;
+        text-align: center;
+        transition: all .5s;
+}
+header .menu li{
+    display: block;
+    line-height: 30px;
+    margin:50px 0;
+}
+header .menu li a{
+    font-size: 20px;
+}
+#hidden-menu{
+    display:none;
+}
 }
